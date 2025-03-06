@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OnboardingPage extends BasePage {
 
-	// Locators
+	
 	@FindBy(xpath = "//button[contains(text(), 'Get Started')]")
 	private WebElement getStartedButton;
 
@@ -40,13 +40,12 @@ public class OnboardingPage extends BasePage {
 	@FindBy(xpath = "//button[contains(text(), 'Submit')]")
 	private WebElement submitOnboardingButton;
 
-	// Constructor
+	
 	public OnboardingPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 
-	// get started
 	public void getStarted() {
 		click(getStartedButton);
 	}

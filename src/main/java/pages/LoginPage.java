@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 
-	// Locators using @FindBy
+	
 	@FindBy(xpath = "//button[contains(text(), 'Get Started')]")
 	private WebElement signInButton;
 
@@ -30,7 +30,7 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//div[contains(@class, 'alert')]")
 	private WebElement loginFailed;
 
-	// Constructor
+	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
